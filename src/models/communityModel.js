@@ -14,7 +14,7 @@ let communitySchema = new  mongoose.Schema({
         maxlength:100,
         
     },
-    creator:{
+    owner:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true,

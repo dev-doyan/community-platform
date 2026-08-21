@@ -12,6 +12,12 @@ const joinRequestSchema = new mongoose.Schema({
         ref: "Community",
         required: true
     },
+    reqStatus:{
+        type:String,
+        enum:["pending","accepted","rejected"],
+        default:"pending"
+
+    },
 
     requestedAt: {
         type: Date,
